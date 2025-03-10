@@ -1,0 +1,109 @@
+﻿@page "/"
+@using System.Text
+@using Microsoft.SemanticKernel.ChatCompletion
+@using SmartLayoutSearch.Services
+
+@inject IChatService ChatService
+
+<div class="chat-container">
+    <!-- Header -->
+    <div class="header">
+        <h1>SmartLayover Chat</h1>
+    </div>
+    
+    <!-- Busy Indicator -->
+    @if (_isProcessing)
+    {
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
+    }
+
+    <!-- Chat History Area -->
+    <div class="chat-history">
+        @foreach (var message in ChatService.ChatMessages
+                      .Where(m => m.Role != AuthorRole.System && m.Role != AuthorRole.Tool &&
+                                  m.Role != AuthorRole.Developer && !string.IsNullOrWhiteSpace(m.Content)))
+        {
+            <div class="chat-message @(message.Role == AuthorRole.User ? "user-message" : "assistant-message")">
+                <strong>@message.Role:</strong>
+                <MarkdownRenderer Content="@message.Content"/>
+            </div>
+        }
+
+        @if (_isProcessing)
+        {
+            <div class="chat-message assistant-message">
+                <MarkdownRenderer Content="@_partialResult.ToString()" />
+            </div>
+        }
+    </div>
+
+    <!-- Chat Input Area -->
+    <div class="chat-input-area">
+        <input @bind="UserInput" placeholder="Enter your message here..." class="chat-input" />
+        <button class="btn send-btn @( _isProcessing ? "processing" : "" )"
+                @onclick="SendMessage" 
+                disabled="@_isProcessing">
+            <i class="fas fa-paper-plane icon"></i> Send
+            <div class="spinner"></div>
+        </button>
+
+        <button class="btn stop-btn" @onclick="StopMessage">
+            <i class="fas fa-stop icon"></i> Stop
+        </button>
+        <button class="btn clear-btn" @onclick="ClearChatAsync">
+            <i class="fas fa-trash icon"></i> Clear
+        </button>
+    </div>
+</div>
+
+@code {
+    private string UserInput { get; set; } = "";
+    private bool _isProcessing;
+    private readonly StringBuilder _partialResult = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ChatService.InitializeAsync();
+    }
+
+    private async Task SendMessage()
+    {
+        try
+        {
+            if (!string.IsNullOrWhiteSpace(UserInput))
+            {
+                _isProcessing = true;
+                var input = UserInput;
+                UserInput = "";
+
+                // Stream the response
+                await foreach (var chunk in ChatService.ConversationAsync(input))
+                {
+                    _partialResult.Append(chunk);
+                    StateHasChanged(); // Refresh partial result
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+        finally
+        {
+            _partialResult.Clear();
+            _isProcessing = false;
+        }
+    }
+    
+    private void StopMessage()
+    {
+        ChatService.StopMessage();
+    }
+
+    private async Task ClearChatAsync()
+    {
+        await ChatService.ClearChatAsync();
+    }
+}

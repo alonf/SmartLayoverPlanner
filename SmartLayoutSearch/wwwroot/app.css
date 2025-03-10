@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #2C2C2C;
+}
+
+.header {
+    background-color: #3A3A3A;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+.chat-history {
+    flex: 1 1 auto; /* Occupies vertical space */
+    margin: 10px;
+    background-color: #1E1E1E;
+    border: 2px solid #B19CD9;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    color: #B19CD9;
+}
+
+.assistant-message {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.chat-input-area {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Improved spacing between buttons */
+    padding: 10px;
+    background-color: #3A3A3A;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #B19CD9;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    height: 50px; /* Matches button height */
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: #B19CD9;
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+.send-btn {
+    position: relative; /* Important for spinner positioning */
+    background-color: #B19CD9; /* Primary color for Send */
+}
+
+    .send-btn.processing {
+        opacity: 0.6; /* Slightly dim the button when busy */
+        cursor: not-allowed; /* Indicate busy state */
+    }
+
+    .send-btn .spinner {
+        display: none; /* Hidden by default */
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top: 3px solid #fff;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        animation: spin 0.8s linear infinite;
+        margin-left: 8px; /* Ensure spacing next to "Send" */
+    }
+
+    .send-btn.processing .spinner {
+        display: inline-block; /* Show spinner only when processing */
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.stop-btn {
+    background-color: #FF6961;
+}
+
+.clear-btn {
+    background-color: #A685E2;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.markdown-content {
+    display: block;
+}
+
+    .markdown-content table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #ddd; /* Stronger outer border */
+        background-color: #222; /* Dark background for improved contrast */
+    }
+
+    .markdown-content th, .markdown-content td {
+        border: 1px solid #888; /* Clearer cell borders */
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    .markdown-content th {
+        background-color: #444; /* Darker header */
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .markdown-content tr:nth-child(even) {
+        background-color: #333; /* Alternating row colors */
+    }
+
+    .markdown-content tr:nth-child(odd) {
+        background-color: #282828; /* Darker row for contrast */
+    }
+
+    .markdown-content a {
+        color: #6495ED; /* Clear blue links for visibility */
+        text-decoration: none;
+    }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+

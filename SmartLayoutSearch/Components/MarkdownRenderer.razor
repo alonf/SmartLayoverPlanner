@@ -1,0 +1,12 @@
+﻿@using Markdig
+
+@code {
+    [Parameter]
+    public string Content { get; set; } = string.Empty;
+
+    private string RenderedHtml => Markdown.ToHtml(Content, new MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+}
+
+<div class="markdown-content">
+    @((MarkupString)RenderedHtml)
+</div>

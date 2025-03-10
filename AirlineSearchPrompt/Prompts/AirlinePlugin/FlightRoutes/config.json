@@ -1,0 +1,27 @@
+﻿{
+	"schema": 1,
+	"description": "Search for airline companies that have a service between two cities",
+	"execution_settings": {
+		"default": {
+			"max_tokens": 4096,
+			"temperature": 0.0,
+			"top_p": 0.0,
+			"presence_penalty": 0.0,
+			"frequency_penalty": 0.0
+		}
+	},
+	"input_variables": [
+		{
+			"name": "origin",
+			"description": "Departure city",
+			"default": "",
+			"is_required": true
+		},
+		{
+			"name": "destination",
+			"description": "Arrival city",
+			"default": "",
+			"is_required": true
+		}
+	]
+}

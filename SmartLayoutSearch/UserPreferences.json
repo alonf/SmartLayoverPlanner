@@ -1,0 +1,77 @@
+[
+  {
+    "Id": "e3778bbd-ca89-4e16-b2c4-ef69e86e8ea7",
+    "Description": "The user prefers direct flights",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "da87d0d3-e151-4f83-92e1-4b71c3d9a4f6",
+    "Description": "The user prefers to stay at a Hilton Hotel",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "49dd2cef-7e3b-411f-9882-8487999e5e61",
+    "Description": " is likely to eat Pizza",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "aa04eda0-b38c-4913-929e-18d7df18a455",
+    "Description": "The user prefers flights from TLV to SEA on the 18th",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "9fa5bcf6-9259-42c8-8ec5-a39907304f8c",
+    "Description": " is likely to stay overnight in NYC",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "72e041ca-2504-4020-b093-0b2ffbbe0e1d",
+    "Description": " is likely to dine at a good restaurant",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "1e3191a5-cd63-43e3-922d-52241b9c57a9",
+    "Description": " is likely to attend a show",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "68d12482-a87d-4e98-836e-7e8f89afee61",
+    "Description": "The user prefers having a stopover in London",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "2e3b3ae8-38d0-456f-ab15-4711f5408c11",
+    "Description": "The user prefers flights with a layover in European cities",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "3de41578-9ca4-414e-90f4-842cd2628825",
+    "Description": " is likely to attend a show during layovers",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "4d67a218-a85c-40d8-a99d-82701dabc0df",
+    "Description": "The user prefers a flight with an overnight stop in NYC",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "4971b205-88bb-4e4e-b7de-5fd18ee95ed4",
+    "Description": "The user likes to eat French food",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "63db28a5-3f66-4d13-af35-9a3888534d1d",
+    "Description": " is likely to attend The Lion King",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "a4161815-5168-4d0c-ba22-3f0613ebca26",
+    "Description": " likes to stay in the Times Square area",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "1edbb59d-a83f-4586-b293-f331cb906fec",
+    "Description": "The user can stop for a night in Denver",
+    "DescriptionEmbedding": null
+  }
+]

@@ -1,0 +1,116 @@
+﻿[
+	{
+		"route": "London to NYC",
+		"airlines": [ "British Airways", "Virgin Atlantic", "London NYC Airline" ],
+		"duration": "7 hours 30 mins",
+		"best_airline": "British Airways"
+	},
+	{
+		"route": "Seattle to Tokyo",
+		"airlines": [ "Delta Airlines", "United Airlines", "Seattle Tokyo Airline" ],
+		"duration": "10 hours 45 mins",
+		"best_airline": "Delta Airlines"
+	},
+	{
+		"route": "Paris to Rome",
+		"airlines": [ "Air France", "ITA Airways", "Paris Rome Airline" ],
+		"duration": "2 hours 10 mins",
+		"best_airline": "Air France"
+	},
+	{
+		"route": "Athens to London",
+		"airlines": [ "Aegean Airlines", "British Airways", "Athens London Airline" ],
+		"duration": "4 hours 0 mins",
+		"best_airline": "Aegean Airlines"
+	},
+	{
+		"route": "Athens to Paris",
+		"airlines": [ "Air France", "Aegean Airlines", "Athens Paris Airline" ],
+		"duration": "3 hours 30 mins",
+		"best_airline": "Aegean Airlines"
+	},
+	{
+		"route": "Athens to Rome",
+		"airlines": [ "ITA Airways", "Aegean Airlines", "Athens Rome Airline" ],
+		"duration": "2 hours 20 mins",
+		"best_airline": "ITA Airways"
+	},
+	{
+		"route": "Athens to Berlin",
+		"airlines": [ "Lufthansa", "Aegean Airlines", "Athens Berlin Airline" ],
+		"duration": "3 hours 40 mins",
+		"best_airline": "Lufthansa"
+	},
+	{
+		"route": "Athens to Madrid",
+		"airlines": [ "Iberia", "Aegean Airlines", "Athens Madrid Airline" ],
+		"duration": "3 hours 50 mins",
+		"best_airline": "Iberia"
+	},
+	{
+		"route": "Athens to Vienna",
+		"airlines": [ "Austrian Airlines", "Aegean Airlines", "Athens Vienna Airline" ],
+		"duration": "2 hours 5 mins",
+		"best_airline": "Austrian Airlines"
+	},
+	{
+		"route": "Athens to Istanbul",
+		"airlines": [ "Turkish Airlines", "Aegean Airlines", "Athens Istanbul Airline" ],
+		"duration": "1 hour 15 mins",
+		"best_airline": "Turkish Airlines"
+	},
+	{
+		"route": "Athens to Dubai",
+		"airlines": [ "Emirates", "Aegean Airlines", "Athens Dubai Airline" ],
+		"duration": "5 hours 20 mins",
+		"best_airline": "Emirates"
+	},
+	{
+		"route": "Athens to Cairo",
+		"airlines": [ "EgyptAir", "Aegean Airlines", "Athens Cairo Airline" ],
+		"duration": "1 hour 50 mins",
+		"best_airline": "EgyptAir"
+	},
+	{
+		"route": "Athens to Tel Aviv",
+		"airlines": [ "El Al", "Aegean Airlines", "Athens TelAviv Airline" ],
+		"duration": "2 hours 0 mins",
+		"best_airline": "Aegean Airlines"
+	},
+	{
+		"route": "Athens to Mumbai",
+		"airlines": [ "Air India", "Aegean Airlines", "AthensM umbai Airline" ],
+		"duration": "7 hours 0 mins",
+		"best_airline": "Air India"
+	},
+	{
+		"route": "Athens to Bangkok",
+		"airlines": [ "Thai Airways", "Aegean Airlines", "Athens Bangkok Airline" ],
+		"duration": "9 hours 30 mins",
+		"best_airline": "Thai Airways"
+	},
+	{
+		"route": "Athens to Sydney",
+		"airlines": [ "Qantas", "Aegean Airlines", "Athens Sydney Airline" ],
+		"duration": "18 hours 0 mins",
+		"best_airline": "Qantas"
+	},
+	{
+		"route": "Athens to Los Angeles",
+		"airlines": [ "Delta Airlines", "Aegean Airlines", "Athens LAX Airline" ],
+		"duration": "15 hours 30 mins",
+		"best_airline": "Delta Airlines"
+	},
+	{
+		"route": "Athens to Toronto",
+		"airlines": [ "Air Canada", "Aegean Airlines", "Athens Toronto Airline" ],
+		"duration": "11 hours 30 mins",
+		"best_airline": "Air Canada"
+	},
+	{
+		"route": "Athens to Tokyo",
+		"airlines": [ "Japan Airlines", "Aegean Airlines", "Athens Tokyo Airline" ],
+		"duration": "13 hours 45 mins",
+		"best_airline": "Japan Airlines"
+	}
+]
