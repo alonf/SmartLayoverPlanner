@@ -73,5 +73,40 @@
     "Id": "1edbb59d-a83f-4586-b293-f331cb906fec",
     "Description": "The user can stop for a night in Denver",
     "DescriptionEmbedding": null
+  },
+  {
+    "Id": "f17ee452-fb92-465f-a84a-7044d1575475",
+    "Description": "The user likes nature",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "f068ddff-074d-434c-8347-0f6a7c02510d",
+    "Description": " is likely to visit gardens",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "5c6e2392-fc63-47d7-838c-6de7bbeac80c",
+    "Description": " is likely to visit museums",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "2776db21-0694-4f36-a81c-1aa0c8a668db",
+    "Description": " is likely to explore scenic roads",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "050c1dc8-dd4d-4523-94f2-2ba81d633fe3",
+    "Description": " is likely to stay at a hotel with a SPA or indoor pool",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "9d9b1171-a23b-486b-947b-695c0b517e3b",
+    "Description": "The user likes scenic routes",
+    "DescriptionEmbedding": null
+  },
+  {
+    "Id": "046beb8c-afd4-404f-b1ad-81c68fc6725d",
+    "Description": " is likely to enjoy hiking and nature",
+    "DescriptionEmbedding": null
   }
 ]

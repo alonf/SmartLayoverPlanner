@@ -37,7 +37,8 @@ public static class ChatServiceExtensions
                 new FlightSearchAgent(kernel),
                 new AccommodationSearchAgent(kernel),
                 new ShowSearchAgent(kernel),
-                new RestaurantSearchAgent(kernel)
+                new RestaurantSearchAgent(kernel),
+                new ActivitiesAgent(kernel)
             };
 
             ILogger<UserPreferenceService> userPreferenceServiceLogger = provider.GetRequiredService<ILogger<UserPreferenceService>>();

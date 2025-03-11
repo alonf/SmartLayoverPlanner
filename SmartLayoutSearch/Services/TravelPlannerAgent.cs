@@ -22,8 +22,9 @@ public class TravelPlannerAgent : ISearchAgent
                 - FlightSearchAgent
                 - RestaurantSearchAgent
                 - ShowSearchAgent
+                - ActivitiesAgent
                 
-                The user request may involve finding accommodations, flights, restaurants, or shows.
+                The user request may involve finding accommodations, flights, restaurants, shows, and activities.
                 Analyze the request, create a plan and response with the main goal and the instruction for each agent.
                 
                 Goal: The user request ... (e.g. to plan a trip to Paris)
@@ -64,9 +65,15 @@ public class TravelPlannerAgent : ISearchAgent
                     * location
                     * time
                     * any additional comments
+                - Activities: Find activities in [location] on [date]. you must provide these result details:
+                    * activity name
+                    * cost
+                    * location
+                    * duration
+                    * any additional comments
                  
                  Example:
-                 User request: "I want to plan a trip to Paris on 12/12/2025. I want to stay in a 5-star hotel and eat at a Michelin-starred restaurant. I also want to attend a concert."
+                 User request: "I want to plan a trip to Paris on 12/12/2025. I want to stay in a 5-star hotel and eat at a Michelin-starred restaurant. I also want to attend a concert, and see some attractions."
                  Output:
                  Goal: The user request to plan a trip from NYC to Paris on 12/12/2025. The user prefers to stay in a 5-star hotel and eat at a Michelin-starred restaurant. The user ask for a concert.
                  Instructions:
@@ -94,6 +101,12 @@ public class TravelPlannerAgent : ISearchAgent
                     * cost
                     * location
                     * time
+                    * any additional comments
+                - Activities: Find activities in Paris on 12/12/2025. you must provide these result details:
+                    * activity name
+                    * cost
+                    * location
+                    * duration
                     * any additional comments
                  
                 """,
